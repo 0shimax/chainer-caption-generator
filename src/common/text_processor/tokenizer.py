@@ -35,7 +35,7 @@ class Tokenizer(object):
                 self.tokens.append(words)
 
     def token2id(self):
-        # tokens: [[word11, word12,...,EOS],..., [word n1, word n2,...,EOS]]
+        # tokens:[[word11, word12,...,EOS],..., [word n1, word n2,...,EOS]]
         if os.path.exists(self.args.tokens_path):
             self.__load_token()
             dictionary = self.__loda_dictionary()
