@@ -27,7 +27,7 @@ def test(model, args):
     # start_idx = 4
     val_it, test_data_size = prepare_dataset(args)
     # test_data_size = 1
-    print("------test data size")
+    print("-----test data size")
     print(test_data_size)
     for batch in val_it:
         raw_x, raw_t, raw_tokens = np.array([batch[0][0]], dtype=np.float32), \

@@ -14,7 +14,7 @@ class ImageNormalizer(object):
 
     def zca_whitening(self, image, eps):
         """
-        N = 1
+        N = 1 
         X = image[:,:].reshape((N, -1)).astype(np.float64)
 
         X = check_array(X, dtype=[np.float64], ensure_2d=True, copy=True)

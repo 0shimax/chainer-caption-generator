@@ -20,7 +20,7 @@ mult_dir = {'n_i_n': 32,
             'r_a_m': 8,
             'r_a_m_cnn': 8,
             'res_net50': 32,
-            'dense_net': 4,  # equal 2^(block-1) which is number of aberage pooling(stride=2)
+            'dense_net': 4,
             'squeeze_net': 16,
             'squeeze_net_dilate': 8,
             'squeeze_net_dilate_recog_one_class': 8,

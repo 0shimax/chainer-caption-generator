@@ -15,7 +15,7 @@ from chainer import variable
 class ModLSTM(chainer.links.LSTM):
     def __call__(self, x):
         """Updates the internal state and returns the LSTM outputs.
-        Args:
+        Args: 
             x (~chainer.Variable): A new batch from the input sequence.
         Returns:
             ~chainer.Variable: Outputs of updated LSTM units.

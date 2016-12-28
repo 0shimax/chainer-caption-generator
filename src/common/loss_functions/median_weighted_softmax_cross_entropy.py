@@ -99,7 +99,7 @@ class MedianWeightedSoftmaxCrossEntropy(function.Function):
         log_yd = numpy.rollaxis(log_y, 1)
         log_yd = log_yd.reshape(len(log_yd), -1)
 
-        # log_yd is 2D matrix(channel, w*h).
+        # log_yd is 2D matrix(channel, w*h) .
         log_p = log_yd[numpy.maximum(t.ravel(), 0), six.moves.range(t.size)]
         # deal with the case where the SoftmaxCrossEntropy is
         # unpickled from the old version

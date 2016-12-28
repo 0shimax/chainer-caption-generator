@@ -5,7 +5,7 @@ import chainer.links as L
 
 class Attention(chainer.Chain):
     """
-    input to lstm is output of attention(fb_t)
+    input to lstm is output of attention(fb_t) 
     hidden state in lstm is f_{t-1}
     in case image, input to align_source_dim is feature map reduced channel to one.
     then, align_score_dim is (batch_size, n_hid)

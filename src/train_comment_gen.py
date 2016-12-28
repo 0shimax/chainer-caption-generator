@@ -114,7 +114,7 @@ def main(args):
         'main/accuracy', 'validation/main/accuracy', \
         ]), trigger=log_interval)
     trainer.extend(extensions.ProgressBar(update_interval=1))
-    print("---set trainer----------")
+    print("----set trainer----------")
 
     if os.path.exists(args.resume):
         print('resume trainer:{}'.format(args.resume))

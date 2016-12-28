@@ -84,7 +84,7 @@ class Decoder(chainer.Chain):
     def __call__(self, t):
         att = self.attention(self.align_source, self.pre_hidden_state)
         h_state = self.dec_lstm(att)
-        y = self.l_out(F.dropout(h_state, train=self.train))  # don't forget to change drop out into non train mode.
+        y = self.l_out(F.dropout(h_state, train=self.train))  # don't forget to change drop out into non train mode .
         self.sentence_ids.append(F.argmax(y, axis=1).data)
         self.pre_hidden_state = h_state
         loss = F.softmax_cross_entropy(y, t)

@@ -26,7 +26,7 @@ zca_eps = 1e-5  # Restoration coefficient of values in image
 im_norm_type = base_params.image_normalize_types_dir[normalize_type]
 base_params.image_normalize_types_dir['ZCA']['opts'] = zca_eps
 model_module = base_params.net_dir[use_net]
-experiment_criteria = ''  # '_20161003'
+experiment_criteria = ''
 output_path = os.path.join(base_params.data_root_path+'/results', use_net+experiment_criteria)
 initial_model = os.path.join( \
     base_params.data_root_path+'/results'+'/'+use_net+experiment_criteria, \
